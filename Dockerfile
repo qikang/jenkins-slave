@@ -9,7 +9,7 @@ RUN yum install iproute curl wget java-1.8.0-openjdk git openssh-client openssl 
 # install docker
 #RUN wget https://download.docker.com/linux/static/stable/x86_64/docker-${DOCKER_VERSION}-ce.tgz
 ADD docker-18.06.3-ce.tgz /tmp/
-RUN cd /tmp && mv docker/docker /bin/docker 
+RUN cd /tmp && mv docker/docker /bin/docker && cd /
 
 #RUN yum install iproute curl wget java-1.8.0-openjdk git openssh-client openssl procps -y \
 #    && yum clean all && rm -rf /var/cache/yum \
