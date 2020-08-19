@@ -26,5 +26,5 @@ COPY remoting-3.27.jar /usr/share/jenkins/slave.jar
 COPY jenkins-slave /jenkins-slave
 RUN chmod +x /jenkins-slave
 
-#ENTRYPOINT ["/jenkins-slave"]
-CMD ["/jenkins-slave"]
+ENTRYPOINT ["/jenkins-slave"]
+#CMD ["/jenkins-slave"]
